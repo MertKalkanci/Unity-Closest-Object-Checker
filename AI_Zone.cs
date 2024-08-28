@@ -78,7 +78,7 @@ public class AI_Zone : MonoBehaviour
 	{   
 		if(other.gameObject != null)
         {		
-			if (other.gameObject.tag.Equals(_tag))
+			if (other.gameObject.CompareTag(_tag))
             {
                 
 				AddAI(other.gameObject);
@@ -90,7 +90,7 @@ public class AI_Zone : MonoBehaviour
 	{
 		if (other.gameObject != null)
 		{		
-			if (other.gameObject.tag.Equals(_tag))
+			if (other.gameObject.CompareTag(_tag))
 			{			
 				DeleteAI(other.gameObject);
 			}
